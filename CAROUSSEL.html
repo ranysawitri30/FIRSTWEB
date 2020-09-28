@@ -15,16 +15,17 @@ a<!DOCTYPE html>
 
   <!-- Mobile Specific Metas
   ================================================== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS
   ================================================== -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
   <!-- Favicons
   ================================================== -->
   <link rel="shortcut icon" href="favicon.ico" >
@@ -84,7 +85,6 @@ body {
 	cursor: pointer;
 	}
 
-
 	.blink{
 		width:100%;
 		height: 10px;
@@ -105,6 +105,7 @@ body {
 	}
 
 .navbar {
+	width:100%;
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
 	background-color: white;
@@ -124,14 +125,14 @@ body {
 	}
   
 .resume {
-    background-color: white;
+    background-color: pink;
 	width: 100%;
 	height: 1294px;
 	}
   
 .colresume{
 	height: 250px;
-	border: 2px solid black;
+	  background-color: white;
 	padding: 10px;
 	box-sizing: border-box;
 	color: black;
@@ -233,6 +234,7 @@ h1.textresume {
  <div class="resume">
  <div class="blink"> <img src = "https://www.pngonly.com/wp-content/uploads/2018/11/picture-stars-png-10205.png"/> </div>
 <h1 class="textresume" style= " padding-bottom: 100px"> RESUME </h1>
+
 <div class="row-no-gutters" >
 
     <div class="col-sm-4" > <div class="colresume">
@@ -254,9 +256,7 @@ h1.textresume {
 	jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>  </div>
     <div class="col-sm-5 " > <div class="colresume"> jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
 </div>  
- </div>
-
- 
+ </div> 
    </div>
  
 <div class="about">
@@ -313,6 +313,17 @@ h1.textresume {
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
+</div>
+<div class="container-fluid">
+  <h1>Two Unequal Responsive Columns</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;"><div class="colresume">
+	jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div></div>
+    <div class="col-sm-8" style="background-color:lavenderblush;"><div class="colresume">
+	jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div></div>
+  </div>
 </div>
 </div>
 <!-- Java Script
