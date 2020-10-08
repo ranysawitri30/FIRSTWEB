@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   
  
@@ -22,6 +22,7 @@ a<!DOCTYPE html>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -93,28 +94,61 @@ background-position: center;
     color: #111;
 	}
 
-.navbar {
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 0;
-	background-color: white;
-	font-color: black;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity: 0.9;
+.active {
+  background-color: #4CAF50;
 }
-
-.navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
+.sidenav {
+background-color: #555;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+  left: 1250px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 9px 0;
 }
+.transbox {
  
-
-  
-.resume {
-	background-image: url("https://images.unsplash.com/photo-1601349518362-7624e4468911?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
-	-webkit-filter: blur(1px);
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.4;
+}
+.sidenav a {
+transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+  padding:  16px 16px;
+    text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+.profile {
 	width: 100%;
-	height: 1175px;
+	height: 500px;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top : 50px;
+}
+.colprofile{
+	height: 420px;
+	border: 2px solid black;
+	padding: 10px;
+	box-sizing: border-box;
+	color: pink;
+	cursor: pointer;
+}
+.descprofile{
+   line-height: 2 ;
+text-align: left ;
+padding-top: 1px;
+} 
+.resume {
+	width: 100%;
+	height: 1155px;
+	animation: blinking 1s infinite;
 }
   
 .colresume{
@@ -125,10 +159,27 @@ background-position: center;
 	color: pink;
 	cursor: pointer;
 }
-
+.titleresume{
+font-size:40px;
+padding: 80px 30px 30px 30px;
+text-align: left ;
+color:pink;
+}
+.contentresume{
+font-size:20px;
+padding: 10px 10px 10px 10px;
+text-align: left ;
+color:pink;
+}
 .about{ 
+background-image: url("https://images.unsplash.com/photo-1601349518362-7624e4468911?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
 	width: 100%;
 	height: 2000px;
+		padding-left: 80px;
+	padding-right: 80px;
+	color: black;
+	
+	text-align: center ;
 } 
 
 img.img1 {
@@ -147,19 +198,13 @@ border: 3px solid pink;
    
   }
 }
-.div1 {	
-	padding-left: 80px;
-	padding-right: 80px;
-	color: black;
-	animation: blinking 1s infinite;
-	text-align: center ;
-	}
+
 	
 .bg-2 {
     height: 404px;
 	background-image: url("https://images.unsplash.com/photo-1601408993947-6ef9e7a1ed97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
 	border: 3px solid pink;
-	padding: 150px;
+	padding: 10px 10px 10px 10px;
 	box-sizing: border-box;
 	color: black;
 	text-align: center ;
@@ -203,30 +248,13 @@ img.img2 {
   <!-- Header
   ================================================== -->
   <header id="home">
-<nav class="navbar navbar-expand-sm bg-light ">
-  <div class="container">
-
-
-      <ul class=" navbar-nav nav justify-content-center ">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li> 
-          </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
-
-  </div>
-</nav>
-  
+<div class="sidenav transbox">
+    <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div>
    
 <div class="bg-image">
   <div class="bg-text">
@@ -242,34 +270,77 @@ img.img2 {
    
  </header>
  
+ <div class="profile">
+ <div class="row"  >
+ 
+ <div class="col-sm-4"><div class="colprofile descprofile">
+ <h1 style="font-size:30px"> Describe</h1>
+ <p>I was graduate from Electrical Engineering at Jenderal Soedirman University. 
+ I plan to build a professional career in the field of power plants.
+ I have mastered skills in ETAP for designing, analyzing, and monitoring electrical power systems.  
+ I love spending time on fixing little details and optimizing what i'm doing .Working with people has broadened my communication talent 
+ and I learnt how to handle different characters in very short time.<hr /></p></div></div>
+ <div class="col-sm-4"><div class="colprofile "> 
+  <img  src="https://github.com/ranysawitri30/FIRSTWEB/blob/master/IMG_7892.JPG?raw=true" class="img-circle" alt="Cinque Terre" width="270" height="286" align = "middle" style="padding-top:10px"> </div></div>
+ <div class="col-sm-4"><div class="colprofile descprofile"> <h1 style="font-size:30px"> Detail</h1>
+ <p><strong>Name:</strong></p>
+ <p>Rany Sawitri</p>
+<p><strong>Age:</strong> </p>
+<p>23 years</p>
+<p><strong>Location:</strong></p>
+<p> Cirebon, Indonesia, Earth</p><hr /></div></div>
+ </div>
+ </div>
+ 
  <div class="resume">
 <div class="row-no-gutters" >
 <h1 class="textresume" style= "padding: 50px" style= "margin: 20px" > RESUME </h1>
-    <div class="col-sm-4" > <div class="colresume">
-	jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>  </div>
-    <div class="col-sm-8 " > <div class="colresume"> jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
+    <div class="col-sm-4" > <div class="colresume titleresume">
+<h1> EDUCATION</h1></div>  </div>
+    <div class="col-sm-8 " > <div class="colresume contentresume"> <h1 style="font-size:25px"><strong> 2015-2019</strong></h1>
+<p>JENDERAL SOEDIRMAN UNIVERSITY | FACULTY OF ENGINEERING</p><p>ELECTRICAL ENGINEERING | GPA : 3.37</p>
+</div>
 </div> 
 
-<div class="col-sm-8" > <div class="colresume">
-	jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>  </div>
-    <div class="col-sm-4 " > <div class="colresume"> jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
+<div class="col-sm-8" > <div class="colresume contentresume">
+	<h1 style="font-size:25px"><strong>JANUARY- FEBRUARY 2018</strong></h1>
+<p>INTERNSHIP</p><p>PLTA WADASLINTANG | PT INDONESIA POWER UP MRICA</p> </div>  </div>
+    <div class="col-sm-4 " > <div class="colresume titleresume"> EXPERIENCE</div>
 </div> 
 
-<div class="col-sm-4" > <div class="colresume">
-	jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>  </div>
-    <div class="col-sm-8 " > <div class="colresume"> jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
+<div class="col-sm-4" > <div class="colresume titleresume">
+	ACHIEVEMENT </div>  </div>
+    <div class="col-sm-8 " > <div class="colresume contentresume"> 
+<p><strong style="font-size:25px">2019 | </strong> ACHIEVEMENT SCHOLARSHIP 2019 | YPK PT INDONESIA POWER</p>
+<p ><strong style="font-size:25px" >2018 | </strong>
+ACHIEVEMENT SCHOLARSHIP 2018 - YPK PT INDONESIA POWER</p>
+<p ><strong style="font-size:25px">2016 | </strong>
+ACHIEVEMENT SCHOLARSHIP 2016 - YPK PT INDONESIA POWER</p>
+<p ><strong style="font-size:25px" >2015 | </strong>
+ACHIEVEMENT SCHOLARSHIP 2015 - YPK PT INDONESIA POWER</p> 
+<p><strong style="font-size:25px" >2015 | </strong>
+BREAKING TEAM - SAINSATION 2015 FMIPA UNSOED</p> 
+</div>
 </div>
 
-<div class="col-sm-7" > <div class="colresume">
-	jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>  </div>
-    <div class="col-sm-5 " > <div class="colresume"> jiji: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
+<div class="col-sm-7" > <div class="colresume contentresume">
+<p ><strong style="font-size:25px">2018 | </strong>
+ STAFF OF COMISSION 3 - DLM OF FACULTY OF ENGINEERING UNSOED 2018</p>
+<p ><strong style="font-size:25px" >2017 | </strong>
+STAFF OF STUDENT RESOURCE DEVELOPMENT DIVISION - HMTE UNSOED 2017</p>
+<p><strong style="font-size:25px">2016 | </strong>
+ STAFF OF INTERNAL DIVISION - HMTE UNSOED 2016</p> 
+  </div>
+	</div>  
+    <div class="col-sm-5 " > <div class="colresume titleresume"> ORGANIZATION 
 </div>  
  </div>
+
  
- 
+   </div> 
    </div>
  
-<div class="about div1">
+<div class="about">
 
   <div class="row-no-gutters" >
 
