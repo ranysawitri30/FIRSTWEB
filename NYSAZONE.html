@@ -32,7 +32,7 @@
    <style>
   
 body {
-	background-image: url("https://images.unsplash.com/photo-1505506874110-6a7a69069a08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+	background-image: url("https://images.unsplash.com/photo-1601349518362-7624e4468911?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
 	margin: 0;
 	height : 100%;
 	font-family: Arial, Helvetica, sans-serif;
@@ -126,6 +126,7 @@ transition: all 0.3s ease;
   display: block;
 }
 .profile {
+	
 	width: 100%;
 	height: 500px;
 	padding-left: 80px;
@@ -134,7 +135,7 @@ transition: all 0.3s ease;
 }
 .colprofile{
 	height: 420px;
-	border: 2px solid black;
+	
 	padding: 10px;
 	box-sizing: border-box;
 	color: pink;
@@ -144,16 +145,28 @@ transition: all 0.3s ease;
    line-height: 2 ;
 text-align: left ;
 padding-top: 1px;
+}
+@keyframes blinking {
+  0%{
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/22/05/29/star-3340185_960_720.png");
+  }
+  /* YOU CAN ADD MORE COLORS IN THE KEYFRAMES IF YOU WANT
+  50%{
+  }
+  */
+  100%{
+   
+  }
 } 
 .resume {
 	width: 100%;
-	height: 1155px;
+	height: 1355px;
 	animation: blinking 1s infinite;
 }
   
 .colresume{
 	height: 250px;
-	border: 2px solid black;
+	border: 2px solid grey;
 	padding: 10px;
 	box-sizing: border-box;
 	color: pink;
@@ -172,11 +185,11 @@ text-align: left ;
 color:pink;
 }
 .about{ 
-background-image: url("https://images.unsplash.com/photo-1601349518362-7624e4468911?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+background-image: url("https://images.unsplash.com/photo-1505506874110-6a7a69069a08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
 	width: 100%;
-	height: 2000px;
-		padding-left: 80px;
-	padding-right: 80px;
+	height: 1800px;
+	padding-left: 180px;
+	padding-right: 150px;
 	color: black;
 	
 	text-align: center ;
@@ -186,34 +199,24 @@ img.img1 {
 border: 3px solid pink;
     height: 404px;	
     }
-@keyframes blinking {
-  0%{
-    background-image: url("https://cdn.pixabay.com/photo/2018/04/22/05/29/star-3340185_960_720.png");
-  }
-  /* YOU CAN ADD MORE COLORS IN THE KEYFRAMES IF YOU WANT
-  50%{
-  }
-  */
-  100%{
-   
-  }
-}
+
 
 	
 .bg-2 {
     height: 404px;
 	background-image: url("https://images.unsplash.com/photo-1601408993947-6ef9e7a1ed97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
 	border: 3px solid pink;
-	padding: 10px 10px 10px 10px;
+	padding: 20px 10px 5px 10px;
 	box-sizing: border-box;
-	color: black;
+	color: purple;
+	font-size:20px;
 	text-align: center ;
 	cursor: pointer;
 	}
 
 h1.textresume {
 	font-size : 60px;
-	color: blue;
+	color: white;
 	text-align: center ;
 	margin: no-gutters;
 	}
@@ -223,9 +226,9 @@ h1.textresume {
 	} 
 	
 .div2 {	
-	padding-left: 500px;
+	padding-left: 400px;
 	padding-right:150px;
-	padding-top: 1400px;
+	padding-top:1300px;
 	color: black;
 	text-align: center ;
 	}
@@ -240,6 +243,21 @@ img.img2 {
 	color: black;
 	text-align: center ;
 	cursor: pointer;
+	}
+	@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+	h1.textshadow{
+	font-size : 30px;
+
+	padding-right:240px;
+	color: blue;
+	text-shadow: 2px 2px 5px pink;
+	text-align: center ;
+	animation: blink 1s linear infinite;
+	margin: no-gutters;
 	}
   </style>
 
@@ -259,8 +277,8 @@ img.img2 {
 <div class="bg-image">
   <div class="bg-text">
   
-    <h1 style="font-size:80px">HELLO FELLAS</h1>
-	<h2 style="font-size:40px">CHECK IT OUT MORE</h2>
+    <h1 style="font-size:80px">Rany Sawitri<hr/></h1>
+	<h2 style="font-size:40px">Electrical Engineer</h2>
 
 
 </div>
@@ -271,7 +289,8 @@ img.img2 {
  </header>
  
  <div class="profile">
- <div class="row"  >
+ <h1 class="textresume" style= "padding: 10px" style= "margin: 10px" > PROFILE <hr/> </h1>
+ <div class="row-no-gutters"  >
  
  <div class="col-sm-4"><div class="colprofile descprofile">
  <h1 style="font-size:30px"> Describe</h1>
@@ -288,13 +307,13 @@ img.img2 {
 <p><strong>Age:</strong> </p>
 <p>23 years</p>
 <p><strong>Location:</strong></p>
-<p> Cirebon, Indonesia, Earth</p><hr /></div></div>
+<p> Cirebon, Indonesia, Earth</p><p></p><p></p><hr /></div></div>
  </div>
  </div>
  
  <div class="resume">
 <div class="row-no-gutters" >
-<h1 class="textresume" style= "padding: 50px" style= "margin: 20px" > RESUME </h1>
+<h1 class="textresume" style= "padding: 150px" style= "margin: 20px" > RESUME </h1>
     <div class="col-sm-4" > <div class="colresume titleresume">
 <h1> EDUCATION</h1></div>  </div>
     <div class="col-sm-8 " > <div class="colresume contentresume"> <h1 style="font-size:25px"><strong> 2015-2019</strong></h1>
@@ -344,15 +363,32 @@ STAFF OF STUDENT RESOURCE DEVELOPMENT DIVISION - HMTE UNSOED 2017</p>
 
   <div class="row-no-gutters" >
 
-  <h1 class="textresume" style= "padding: 150px" style= "margin: 20px"   > MORE ABOUT ME </h1>
+  <h1 class="textresume" style= "padding: 100px" style= "margin: 20px"   > MORE ABOUT ME </h1>
  
     <div class="col-sm-5" >   <img class="img1" src="https://image.freepik.com/free-vector/seamless-pattern-with-women-faces-crowd_23-2148424565.jpg" style= "width : 100%" /> </div>
-    <div class="col-sm-3 bg-2" > Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
+    <div class="col-sm-3 bg-2" > <h1><strong style="font-size:25px"> PERSONALITY </strong> </h1> 
+	<p>COMMUNICATIVE</p>
+	<p>HARD WORKING</p>
+	<p>DISCIPLINE</p>
+	<p>TEAM WORK</p>
+	<p>RESPONSIBILITY</p>
+
+	</div>
     <div class="col-sm-4">   <img  class="img1" src="https://image.freepik.com/free-vector/women-s-day-pattern-with-women-faces_23-2148422514.jpg"  style= "width : 100%" />  </div>
 
-     <div class="col-sm-3 bg-2" >  Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
+     <div class="col-sm-3 bg-2" ><h1><strong style="font-size:25px">LANGUANGE SKILL </strong> </h1> 
+	<p>INDONESIA| <span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span></p>
+	<p>ENGLISH |<span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span></p>
+	 
+	 </div>
 	<div class="col-sm-4" >   <img class="img1"  src="https://image.freepik.com/free-vector/different-women-s-day-pattern-with-women-faces_23-2148421309.jpg" style= "width : 100%" /> </div>
-	<div class="col-sm-5 bg-2" >  Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
+	<div class="col-sm-5 bg-2" > <h1><strong style="font-size:25px"> TECHNICAL SKILL </strong> </h1> 
+	<p>MICROSOFT OFFICE | <span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span></p>
+	<p>ETAP |<span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></span></p>
+	<p>HTML |<span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></p>
+	<p>CSS |<span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></p>
+	<p>PSIM |<span class="glyphicon glyphicon-star-empty "></span><span class="glyphicon glyphicon-star-empty "></p>
+	</div>
  
  <div class="col-sm-5">   <img class="img1" src="https://image.freepik.com/free-vector/seamless-pattern-with-women-faces-crowd_23-2148424565.jpg"  style= "width : 100%" />  </div>
   <div class="col-sm-3 bg-2" > Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. Tders and margins. tyle="width:100%"  </div>
@@ -362,6 +398,7 @@ STAFF OF STUDENT RESOURCE DEVELOPMENT DIVISION - HMTE UNSOED 2017</p>
   <div class = "contact">
 
   <div class = "div2">
+  <h1 class="textshadow" > TAP TAP HERE ! </h1>
  <div class="row-no-gutters" >
     <div class="col-sm-2 bg-3">  <img class="img2" src="https://cdn.pixabay.com/photo/2016/11/18/11/16/social-1834010_960_720.png" style= "width : 100%" /> </div>
     <div class="col-sm-2 bg-3" > <img class="img2" src="https://cdn.pixabay.com/photo/2016/11/18/11/16/social-1834013_960_720.png" style= "width : 100%" /> </div>
@@ -370,7 +407,7 @@ STAFF OF STUDENT RESOURCE DEVELOPMENT DIVISION - HMTE UNSOED 2017</p>
   </div>  
   </div>
 </div>    	  
-</div>\	  
+</div>
 
 
 <!-- Java Script
